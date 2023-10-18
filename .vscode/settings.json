@@ -12,5 +12,6 @@
     "typescript",
     "typescriptreact",
     "vue"
-  ]
+  ],
+  "nuxt.isNuxtApp": false
 }

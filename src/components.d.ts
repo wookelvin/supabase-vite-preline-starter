@@ -7,9 +7,21 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Alert: typeof import('./components/common/Alert.vue')['default']
     Blank: typeof import('./components/Blank.vue')['default']
-    Container: typeof import('./components/Container.vue')['default']
+    Button: typeof import('./components/common/Button.vue')['default']
+    Card: typeof import('./components/common/Card.vue')['default']
+    Container: typeof import('./components/common/Container.vue')['default']
+    copy: typeof import('./components/common/Menu copy.vue')['default']
+    Form: typeof import('./components/common/Form.vue')['default']
+    FormInput: typeof import('./components/common/FormInput.vue')['default']
+    Logo: typeof import('./components/Logo.vue')['default']
+    Menu: typeof import('./components/common/Menu.vue')['default']
+    MenuItem: typeof import('./components/common/MenuItem.vue')['default']
+    MenuSection: typeof import('./components/common/MenuSection.vue')['default']
+    ProfileNavItem: typeof import('./components/ProfileNavItem.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Sidebar: typeof import('./components/common/Sidebar.vue')['default']
   }
 }

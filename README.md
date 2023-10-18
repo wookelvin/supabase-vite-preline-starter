@@ -13,7 +13,6 @@ Using
 - @ alias setup
 - @vueuse/core
 - lodash
-- iconoir
 
 # To get started 
 

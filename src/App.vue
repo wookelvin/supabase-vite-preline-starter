@@ -1,9 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <Container>
-    <RouterView />
-  </Container>
+  <RouterView />
 </template>
 
 <style scoped lang="postcss"></style>
