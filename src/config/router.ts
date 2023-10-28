@@ -41,7 +41,39 @@ const routes: RouteRecordRaw[] = [
     children: [
       {
         path: "",
-        component: () => import("@/pages/Dashboard.vue"),
+        redirect: "/recipes",
+      },
+      {
+        path: "recipes",
+        component: () => import("@/pages/Recipes.vue"),
+      },
+      {
+        path: "recipes/:id",
+        component: () => import("@/pages/Recipe.vue"),
+      },
+      {
+        path: "feeds",
+        component: () => import("@/pages/Feeds.vue"),
+      },
+      {
+        path: "browser",
+        component: () => import("@/pages/Browser.vue"),
+      },
+      {
+        path: "friends",
+        component: () => import("@/pages/Friends.vue"),
+      },
+      {
+        path: "schedule",
+        component: () => import("@/pages/Schedule.vue"),
+      },
+      {
+        path: "list",
+        component: () => import("@/pages/List.vue"),
+      },
+      {
+        path: "api-test",
+        component: () => import("@/pages/ApiTest.vue"),
       },
     ],
   },

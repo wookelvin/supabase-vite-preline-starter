@@ -7,9 +7,9 @@ defineProps<{
 <template>
   <section class="menu-section">
     <span class="menu-title" v-if="title">{{ title }}</span>
-    <ul class="menu-items">
+    <div class="menu-items">
       <slot></slot>
-    </ul>
+    </div>
   </section>
 </template>
 

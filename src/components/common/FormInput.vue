@@ -5,6 +5,7 @@ const props = defineProps<{
   label?: string;
   type?: string;
   modelValue?: string;
+  placeholder?: string;
   required?: boolean;
   options?: SelectOption[];
 }>()
@@ -30,12 +31,13 @@ function onInput() {
   <div class="form-field">
     <label class="form-label">{{ label }}</label>
     <div class="form-control">
-      <select v-if="type === 'select'" class="select w-full">
+      <select v-if="type === 'select'" class="select block flex-1 max-w-full">
         <option v-for="k of options" :key="k.value" :value="k.value">
           {{ k.label }}
         </option>
       </select>
-      <input v-else ref="input" v-model="value" :required="required" :type="type" class="input w-full" @input="onInput">
+      <input v-else ref="input" :placeholder="placeholder" v-model="value" :required="required" :type="type"
+        class="input block flex-1  max-w-full" @input="onInput">
     </div>
 
     <label v-if="error" class="form-label show-when-submitted">

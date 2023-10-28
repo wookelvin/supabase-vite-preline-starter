@@ -6,8 +6,8 @@ import { Icon } from '@iconify/vue';
 
 <template>
   <div class="flex items-center gap-2">
-    <Icon icon="mdi:chef-hat" class="h-16 w-16 text-white" />
-    <div class="text-2xl">RecipeApp</div>
+    <Icon icon="mdi:chef-hat" class="h-12 w-12 text-white" />
+    <div class="text-xl">RecipeApp</div>
   </div>
 </template>
 

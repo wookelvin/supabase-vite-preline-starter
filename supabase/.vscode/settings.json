@@ -13,8 +13,8 @@
     "typescriptreact",
     "vue"
   ],
-  "nuxt.isNuxtApp": false,
-  "deno.enable": false,
-  "deno.lint": false,
-  "deno.unstable": false
+  "deno.enable": true,
+  "deno.lint": true,
+  "deno.unstable": true,
+  "nuxt.isNuxtApp": false
 }

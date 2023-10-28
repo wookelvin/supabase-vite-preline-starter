@@ -12,12 +12,13 @@
       <template #default>
         <Menu>
           <MenuSection>
-            <MenuItem>Recipes</MenuItem>
-            <MenuItem>RSS Feed</MenuItem>
-            <MenuItem>Browser</MenuItem>
-            <MenuItem>Friends</MenuItem>
-            <MenuItem>Schedule</MenuItem>
-            <MenuItem>List</MenuItem>
+            <MenuItem to="/recipes">Recipes</MenuItem>
+            <MenuItem to="/feeds">Feeds</MenuItem>
+            <MenuItem to="/browser">Browser</MenuItem>
+            <MenuItem to="/friends">Friends</MenuItem>
+            <MenuItem to="/schedule">Schedule</MenuItem>
+            <MenuItem to="/list">List</MenuItem>
+            <MenuItem to="/api-test">Api Test</MenuItem>
           </MenuSection>
         </Menu>
 
@@ -36,12 +37,16 @@
 <style scoped lang="postcss">
 :deep() {
   .sidebar {
-    width: 300px;
+    width: 200px;
     @apply flex-shrink-0;
+  }
+
+  h1 {
+    @apply text-xl font-bold;
   }
 }
 
 main {
-  @apply flex-1 p-10;
+  @apply flex-1 p-5;
 }
 </style>
