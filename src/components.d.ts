@@ -12,7 +12,6 @@ declare module 'vue' {
     Button: typeof import('./components/common/Button.vue')['default']
     Card: typeof import('./components/common/Card.vue')['default']
     Container: typeof import('./components/common/Container.vue')['default']
-    copy: typeof import('./components/common/Menu copy.vue')['default']
     Form: typeof import('./components/common/Form.vue')['default']
     FormInput: typeof import('./components/common/FormInput.vue')['default']
     Logo: typeof import('./components/Logo.vue')['default']
