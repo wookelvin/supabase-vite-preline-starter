@@ -16,5 +16,12 @@
   "nuxt.isNuxtApp": false,
   "deno.enable": false,
   "deno.lint": false,
-  "deno.unstable": false
+  "deno.unstable": false,
+  "azureFunctions.deploySubpath": "api",
+  "azureFunctions.postDeployTask": "npm install (functions)",
+  "azureFunctions.projectLanguage": "TypeScript",
+  "azureFunctions.projectRuntime": "~4",
+  "debug.internalConsoleOptions": "neverOpen",
+  "azureFunctions.projectLanguageModel": 4,
+  "azureFunctions.preDeployTask": "npm prune (functions)"
 }
