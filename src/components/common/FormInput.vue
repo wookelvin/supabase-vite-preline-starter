@@ -28,27 +28,27 @@ function onInput() {
 </script>
 
 <template>
-  <div class="form-field">
-    <label class="form-label">{{ label }}</label>
-    <div class="form-control">
-      <select v-if="type === 'select'" class="select block flex-1 max-w-full">
+  <div class="form-control">
+    <label class="label" v-if="label"><span class="label-text">{{ label }}</span></label>
+    <div>
+      <select v-if="type === 'select'" class="select w-full">
         <option v-for="k of options" :key="k.value" :value="k.value">
           {{ k.label }}
         </option>
       </select>
       <input v-else ref="input" :placeholder="placeholder" v-model="value" :required="required" :type="type"
-        class="input block flex-1  max-w-full" @input="onInput">
+        class="input w-full" @input="onInput">
     </div>
 
-    <label v-if="error" class="form-label show-when-submitted">
-      <div class="form-label-alt text-error">
+    <label v-if="error" class="label show-when-submitted">
+      <span class="label-text-alt text-error">
         {{ error }}
-      </div>
+      </span>
     </label>
     <label v-if="$slots.footer" class="form-label">
-      <div clas="form-label-alt">
+      <span class="form-label-alt">
         <slot name="footer" />
-      </div>
+      </span>
     </label>
   </div>
 </template>
@@ -60,5 +60,10 @@ function onInput() {
 
 .show-validations .show-when-submitted {
   display: unset;
+}
+
+.select,
+.input {
+  @apply bg-base-200;
 }
 </style>

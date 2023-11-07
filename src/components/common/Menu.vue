@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <nav class="menu p-4 rounded-md">
+  <ul class="menu">
     <slot />
-  </nav>
+  </ul>
 </template>
 <style scoped lang="postcss"></style>

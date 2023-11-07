@@ -15,12 +15,12 @@ function onSubmit() {
 </script>
 
 <template>
-  <h1>Browser</h1>
-  <div class="flex items-center gap-1 my-5">
-    <Button type="button">
+  <div class="flex items-center gap-2 my-5">
+    <h1>Browser</h1>
+    <Button>
       <Icon icon="iconoir:arrow-left" />
     </Button>
-    <Button type="button">
+    <Button>
       <Icon icon="iconoir:refresh" />
     </Button>
     <form @submit.stop.prevent="onSubmit" class="block w-full">
@@ -44,7 +44,7 @@ function onSubmit() {
 <style scoped lang="postcss">
 iframe {
   @apply w-full rounded-lg;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 130px);
   background: #555;
 }
 </style>

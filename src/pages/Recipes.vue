@@ -9,7 +9,7 @@
       <div>
         <Button type="button" icon-before="ic:outline-add">Recipe</Button>
       </div>
-      <input type="text" class="input input-solid" placeholder="Search ..." />
+      <FormInput placeholder="Search ... " />
     </div>
   </div>
 </template>

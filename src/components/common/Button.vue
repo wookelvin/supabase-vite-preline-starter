@@ -35,7 +35,7 @@ const btnClasses = computed(() => {
     <slot />
     <Icon v-if="iconAfter" :icon="iconAfter" class="icon" />
   </RouterLink>
-  <button v-else :class="btnClasses" :type="type" @click="e => $emit('click', e)">
+  <button v-else :class="btnClasses" :type="type || 'button'" @click="e => $emit('click', e)">
     <Icon v-if="iconBefore" :icon="iconBefore" class="icon" />
     <slot />
     <Icon v-if="iconAfter" :icon="iconAfter" class="icon" />

@@ -2,11 +2,13 @@
 </script>
 
 <template>
-  <div class="container px-5 mx-auto">
+  <div class="container">
     <slot />
   </div>
 </template>
 
 <style scoped lang="postcss">
-
+.container {
+  @apply px-5 mx-auto;
+}
 </style>

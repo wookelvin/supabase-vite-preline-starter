@@ -19,8 +19,7 @@ function onSubmit() {
 </script>
 
 <template>
-  <form ref="form" novalidate @submit.stop.prevent="onSubmit" class="form-group"
-    :class="{ 'show-validations': showValidations }">
+  <form ref="form" novalidate @submit.stop.prevent="onSubmit" :class="{ 'show-validations': showValidations }">
     <slot />
   </form>
 </template>

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="flex">
+  <div class="member-layout">
     <Sidebar>
 
       <template #header>
@@ -11,21 +11,18 @@
       </template>
       <template #default>
         <Menu>
-          <MenuSection>
-            <MenuItem to="/recipes">Recipes</MenuItem>
-            <MenuItem to="/feeds">Feeds</MenuItem>
-            <MenuItem to="/browser">Browser</MenuItem>
-            <MenuItem to="/friends">Friends</MenuItem>
-            <MenuItem to="/schedule">Schedule</MenuItem>
-            <MenuItem to="/list">List</MenuItem>
-            <MenuItem to="/api-test">Api Test</MenuItem>
-          </MenuSection>
+          <MenuItem to="/recipes">Recipes</MenuItem>
+          <MenuItem to="/feeds">Feeds</MenuItem>
+          <MenuItem to="/browser">Browser</MenuItem>
+          <MenuItem to="/friends">Friends</MenuItem>
+          <MenuItem to="/schedule">Schedule</MenuItem>
+          <MenuItem to="/list">List</MenuItem>
+          <MenuItem to="/api-test">Api Test</MenuItem>
         </Menu>
 
       </template>
       <template #footer>
-        <div class="divider divider-horizontal mb-0" />
-        <ProfileNavItem />
+        <ProfileMenu />
       </template>
     </Sidebar>
     <main>
@@ -35,10 +32,14 @@
 </template>
 
 <style scoped lang="postcss">
+.member-layout {
+  --sidebar-width: 225px;
+}
+
 :deep() {
   .sidebar {
-    width: 200px;
-    @apply flex-shrink-0;
+    width: var(--sidebar-width);
+    @apply fixed top-0 left-0 bottom-0;
   }
 
   h1 {
@@ -48,5 +49,7 @@
 
 main {
   @apply flex-1 p-5;
+  margin-left: var(--sidebar-width);
+
 }
 </style>

@@ -11,13 +11,13 @@ withDefaults(defineProps<{
 </script>
 
 <template >
-  <div class="card">
+  <div class="card bg-base-100 shadow-xl">
     <div class="card-body">
-      <component v-if="title" :is="headerComponent" class="card-header">
+      <component v-if="title" :is="headerComponent" class="card-title">
         <slot name="header">{{ title }}</slot>
       </component>
       <slot />
-      <div class="card-footer">
+      <div class="card-actions" v-if="$slots.footer">
         <slot name="footer"></slot>
       </div>
     </div>
