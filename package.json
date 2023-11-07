@@ -4,13 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vercel dev",
+    "server": "netlify dev",
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@iconify/vue": "^4.1.1",
+    "@netlify/functions": "^2.3.0",
     "@vueuse/core": "^10.2.0",
     "concurrently": "^8.2.2",
     "lodash": "^4.17.21",

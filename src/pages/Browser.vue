@@ -10,7 +10,7 @@ const iframeUrl = ref('');
 function onSubmit() {
   console.log('submitting');
   const r = Math.random() * 1000;
-  iframeUrl.value = 'http://localhost:54321/functions/v1/proxy?target_url=' + encodeURIComponent(url.value) + '&r=' + r.toString();
+  iframeUrl.value = '/.netlify/functions/proxy?target_url=' + encodeURIComponent(url.value);
 }
 </script>
 
